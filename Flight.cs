@@ -15,4 +15,9 @@ public class Flight
         ArrivalCity = arrivalCity;
         Day = day;
     }
+
+    public override string ToString()
+    {
+        return $"Flight {FlightNumber}: {DepartureCity} to {ArrivalCity}, Day {Day}, Capacity {Capacity}";
+    }
 }

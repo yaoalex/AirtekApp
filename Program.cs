@@ -17,7 +17,10 @@ Day 2, Flight 6, YUL to YVR
 ";
         var flights = FlightUtility.LoadFlightsFromString(flightScheduleInput);
         // Display loaded flights
-        FlightUtility.DisplayAllFlights(flights);
+        foreach (var flight in flights)
+        {
+            Console.WriteLine(flight);
+        }
 
         // Load orders from JSON
         var orderLoader = new OrderLoader();
